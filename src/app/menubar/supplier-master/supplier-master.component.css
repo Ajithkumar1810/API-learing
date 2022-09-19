@@ -1,0 +1,56 @@
+
+.container{
+    background-color: rgba(255, 255, 255, 0.926);
+    
+}
+#outter{
+    background-color: rgba(255, 255, 255, 0.919);
+    border-style: inset;
+    padding: 2vw;
+    padding-bottom: 10vw;
+}
+#links{
+display: flex;
+
+
+}
+h6{
+    margin-left: .5vw;
+    /* background-color: rgba(255, 255, 255, 0.866); */
+
+}
+#inner{
+    background-color: white;
+   
+    border-style: inset;
+    padding: 2vw;
+    box-shadow:  5px 10px #888888;
+
+   
+   
+}
+i{
+   background-color:white ;
+   color:rgb(55, 55, 176);
+   border-style: groove;
+   border-radius: 5vw;
+}
+#inner2{
+    background-color: rgba(255, 255, 255, 0.897);
+   
+    border-style: inset;
+    box-shadow:  5px 10px #888888;
+
+
+}
+form{
+    background-color: rgba(255, 255, 255, 0.897);
+   
+    border-style:ridge;
+    box-shadow:  5px 10px #888888;
+    
+}
+.form-group{
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}

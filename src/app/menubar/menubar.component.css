@@ -1,0 +1,10 @@
+.container-fluid{
+    display: flex;
+    flex-direction:row ; 
+    /* background-color: rgb(87, 87, 215); */
+    /* size: 2vw; */
+}
+.text{
+    background-color: rgb(220, 238, 15);
+
+}

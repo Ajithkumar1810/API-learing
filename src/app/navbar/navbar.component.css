@@ -1,0 +1,14 @@
+.container-fluid{
+    display: flex;
+    flex-direction:row ; 
+    /* background-color: rgb(215, 87, 89); */
+    background-color: rgb(87, 87, 215);
+}
+button{
+    text-decoration: none;
+    color: white;
+}
+i{
+   font-size: 4vh;
+
+}
