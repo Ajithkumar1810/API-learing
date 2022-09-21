@@ -1,6 +1,6 @@
 <div class="container-fluid">
-    <app-supplier-master *ngIf="targetpagename==='Master'"></app-supplier-master>
-    <app-new-supplier *ngIf="targetpagename==='New'"></app-new-supplier>
+    <app-supplier-master *ngIf="targetpagename==='Master'" (addMasterbutton)=" onClickAddMasterButton($event)"></app-supplier-master>
+    <app-new-supplier *ngIf="targetpagename==='New'" (backbutton)="onClickbackbutton($event)"></app-new-supplier>
     <!-- <h1>{{targetpagename}}</h1> -->
 
 </div>
