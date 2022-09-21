@@ -54,3 +54,6 @@ form{
     margin-top: 2vw;
     margin-bottom: 2vw;
 }
+button{
+    cursor: pointer;
+}

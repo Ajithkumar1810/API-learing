@@ -12,3 +12,7 @@ i{
    font-size: 4vh;
 
 }
+#profileicon,#logouticon{
+    font-size: 1vw;
+    color: rgb(180, 0, 0);
+}

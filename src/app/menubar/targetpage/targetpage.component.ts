@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit ,Input} from '@angular/core';
 
 @Component({
   selector: 'app-targetpage',
@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./targetpage.component.css']
 })
 export class TargetpageComponent implements OnInit {
-  viewpage=false
+@Input('tragetpagename') targetpagename='Master';
+  viewpage=false;
   constructor() { }
 
   ngOnInit(): void {
   }
+  
 
 }

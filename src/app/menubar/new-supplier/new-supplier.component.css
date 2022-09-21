@@ -73,3 +73,6 @@ padding-top: 2vw;
     /* .col-xs-6{
         margin-left: .2vw;
     } */
+button{
+        cursor: pointer;
+    }

@@ -1,14 +1,23 @@
 <div class="container-fluid">
-  <div class="col-xs-2">
-    <app-menubar></app-menubar>
+  <div class="col-xs-2" *ngIf="menu===true">
+    <br>
+    <app-menubar (callMaster)="onClickMaster($event)"
+    (callNew)="onClickNew($event)"></app-menubar>
+  </div>
+  <div class="col-xs-1" >
+    <br>
+    <i class="glyphicon glyphicon-chevron-left" id="menuoption" (click)="onMenu()" *ngIf="menu===true" ></i>
+    <i class="glyphicon glyphicon-chevron-right" id="menuoption" (click)="onMenu()" *ngIf="menu!==true"></i>
+
   </div>
   <div class="col-xs-10">
    <div class="row">
     <app-navbar ></app-navbar>
     <br>
    </div>
+   <!-- <h1>{{Destination}}</h1> -->
    <div class="row">
-    <app-targetpage></app-targetpage>
+    <app-targetpage [tragetpagename]="Destination"></app-targetpage>
     
    </div>
    

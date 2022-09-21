@@ -1,10 +1,14 @@
 .container-fluid{
     display: flex;
-    flex-direction:row ; 
+    flex-direction:column ; 
     /* background-color: rgb(87, 87, 215); */
     /* size: 2vw; */
 }
-.text{
+.text .row{
     background-color: rgb(220, 238, 15);
 
+}
+a{
+    color: white;
+    cursor: pointer;
 }
