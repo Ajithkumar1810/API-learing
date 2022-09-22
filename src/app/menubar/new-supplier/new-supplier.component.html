@@ -21,11 +21,22 @@
        <div class="container-fluid" id="inner">
         <div class="row">
             <div class="col-xs-10">
-                <h3 style="font-style:bold ;">Add New Supplier </h3>
+                <!-- <h3>{{Supplier_Key}}
+                    {{Supplier_Name}}
+                    {{supplier_email_id}}
+                    {{Supplier_Contact_Details}}
+                    {{State_Name}}
+                    {{Country_Name}}
+                    {{City_Name}}
+                    {{Status  }}</h3> -->
+                <h3 style="font-style:bold ;">Add New Supplier<br><br> <div *ngIf="Details===false" class="alert alert-danger" role="alert"><h4>Please Enter every Details properly....!</h4></div>
+                    <div class="alert alert-success" role="alert" *ngIf="info===true">
+                        This Data is Successfull Added!
+                      </div></h3>
             </div>
             
             <div class="col-xs-1"><br>
-                <button class="btn btn-primary "><i class="glyphicon glyphicon-plus" id="add_button"></i> Submit</button>
+                <button class="btn btn-primary " (click)="onSubmit()"><i class="glyphicon glyphicon-plus" id="add_button"></i> Submit</button>
             </div>
         </div>
             
@@ -37,19 +48,20 @@
                         <label >Supplier Details</label>
                     </div>
                     <div class="row">
-                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Supplier Key *"> 
+  
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Supplier Key *"   (input)="onSupplier_Key($event)"> 
 
                     </div>
                     <div class="row">
-                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Supplier Name *"> 
+                        <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Supplier Name *"  (input)="onSupplier_Name($event)"> 
 
                     </div>
                     <div class="row">
-                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Supplier Email *"> 
+                        <input type="text" class="form-control" id="exampleFormControlInput3" placeholder="Supplier Email *"  (input)="onsupplier_email_id($event)"> 
 
                     </div>
                     <div class="row">
-                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Supplier Contact Details *"> 
+                        <input type="text" class="form-control" id="exampleFormControlInput4" placeholder="Supplier Contact Details *"  (input)="onSupplier_Contact_Details($event)"> 
 
                     </div>
                 </div>
@@ -61,15 +73,15 @@
                     </div>
                    
                     <div class="row">
-                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="State_Name *"> 
+                        <input type="text" class="form-control" id="exampleFormControlInput5" placeholder="State_Name *"  (input)="onState_Name($event)"> 
 
                     </div>
                     <div class="row">
-                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Country_Name *"> 
+                        <input type="text" class="form-control" id="exampleFormControlInput6" placeholder="Country_Name *"  (input)="onCountry_Name($event)"> 
 
                     </div>
                     <div class="row"id='row2'>
-                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="City_Name *"> 
+                        <input type="text" class="form-control" id="exampleFormControlInput7" placeholder="City_Name *"  (input)="onCity_Name($event)"> 
 
                     </div>
                 </div>
